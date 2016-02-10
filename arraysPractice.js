@@ -381,5 +381,13 @@ Once you find the particular index he's located in, delete him from the array.*/
 
   //Code Here
 
+  function deleteUser(users, email) {
+    users.forEach(function (user) {
+      if (user.email === email) {
+        users.splice(users.indexOf(user), 1);
+      }
+    });
+  }
+
 //The activity we just did is very much how data works in 'the real world'.
 
